@@ -137,18 +137,18 @@ terrain:
     destructible: false
 
   beanstalk:
-  sprites:
-    - assets/terrain/beanstalk.png
+    sprites:
+      - assets/terrain/beanstalk.png
 
-  solid: false
-  walkable: false
+    solid: false
+    walkable: false
 
-  traversal:
-    type: climbable
-    movement: vertical
+    traversal:
+      type: climbable
+      movement: vertical
 
-  interaction:
-    enter_mode: climb
+    interaction:
+      enter_mode: climb
 
 
 
@@ -156,15 +156,20 @@ terrain:
 goals:
 
   ax:
-    sprite
+    sprites:
+      - assets/goals/ax.png
     terminal: true
     reward: 5000
 
   firework:
+    sprites:
+      - assets/goals/firework.png
     terminal: false
     reward: 100
 
   flagpole:
+    sprites:
+      - assets/goals/flagpole.png
     terminal: true
     reward: 5000
 
