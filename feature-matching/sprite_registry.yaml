@@ -1,8 +1,13 @@
 player:
 
+
   mario_regular:
     sprites:
-      - assets/player/mario_regular.png
+
+      - assets/player/mario_small_left.png
+      - assets/player/mario_small_right.png
+
+      
 
 
   mario_large:
@@ -237,7 +242,8 @@ enemies:
 
   goomba:
     sprites:
-      - assets/enemies/goomba.png
+      - assets/enemies/goomba_walk_1.png
+      - assets/enemies/goomba_walk_2.png
     movement: ground
     danger: 2
     stompable: true
