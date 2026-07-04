@@ -1,0 +1,290 @@
+player:
+
+  mario_regular:
+    sprites:
+      - assets/player/mario_regular.png
+
+
+  mario_large:
+    sprites:
+      - assets/player/mario_large.png
+
+
+  mario_fire:
+    sprites:
+      - assets/player/mario_fire.png
+
+
+  mario_invincible:
+    sprites:
+      - assets/player/mario_invincible.png
+
+
+  luigi_regular:
+    sprites:
+      - assets/player/luigi_regular.png
+
+
+  luigi_large:
+    sprites:
+      - assets/player/luigi_large.png
+
+
+
+
+
+pickup:
+
+  coin:
+    sprites:
+      - assets/pickup/coin.png
+    policy:
+      reward: 50
+
+
+  fire_flower:
+    sprites:
+      - assets/pickup/fire_flower.png
+    policy:
+      reward: 500
+
+
+  mushroom_1up:
+    sprites:
+      - assets/pickup/mushroom_1up.png
+    policy:
+      reward: 1000
+
+
+  mushroom_magic:
+    sprites:
+      - assets/pickup/mushroom_magic.png
+    policy:
+      reward: 250
+
+
+  starman:
+    sprites:
+      - assets/pickup/starman.png
+    policy:
+      reward: 1000
+
+
+
+
+terrain:
+
+  brick:
+    sprites:
+      - assets/terrain/brick.png
+    walkable: true
+    solid: true
+    destructible: true
+
+  island:
+    sprites:
+      - assets/terrain/island.png
+    walkable: true
+    solid: true
+    destructible: false
+
+  lift:
+    sprites:
+      - assets/terrain/lift.png
+    walkable: true
+    solid: true
+    dynamic: true
+    support_player: true
+    destructible: false
+
+  question_block:
+    sprites:
+      - assets/terrain/question_block.png
+    walkable: true
+    solid: true
+    destructible: true
+
+  stair_block:
+    sprites:
+      - assets/terrain/stair_block.png
+    walkable: true
+    solid: true
+    destructible: false
+
+
+  super_mushroom:
+    sprites:
+      - assets/terrain/super_mushroom.png
+    walkable: true
+    solid: true
+    destructible: false
+
+  trampoline:
+    sprites:
+      - assets/terrain/trampoline.png
+    solid: true
+    walkable: true
+
+    interaction:
+      type: bounce
+      impulse_y: 12
+
+  warp_pipe:
+    sprites:
+      - assets/terrain/warp_pipe.png
+    walkable: true
+    solid: true
+    destructible: false
+
+  beanstalk:
+  sprites:
+    - assets/terrain/beanstalk.png
+
+  solid: false
+  walkable: false
+
+  traversal:
+    type: climbable
+    movement: vertical
+
+  interaction:
+    enter_mode: climb
+
+
+
+
+goals:
+
+  ax:
+    sprite
+    terminal: true
+    reward: 5000
+
+  firework:
+    terminal: false
+    reward: 100
+
+  flagpole:
+    terminal: true
+    reward: 5000
+
+
+
+hazard:
+
+  lava:
+    lethal: true
+    persistent: true
+
+  gap:
+    lethal: true
+    inferred: true
+    dynamic: true
+
+  fire_bar:
+    lethal: true
+    periodic: true
+
+  bullet_shooter:
+    spawns: bullet_bill
+    periodic: true
+
+
+
+enemies:
+
+  bullet_bill:
+    movement: projectile
+    danger: 3
+
+  buzzy_beetle:
+    movement: ground
+    danger: 2
+    stompable: true
+
+  evil_calcifer:
+    movement: unknown
+    danger: 5
+
+  fish_grey:
+    movement: swimming
+    danger: 2
+
+  fish_red:
+    movement: swimming
+    danger: 3
+
+  goomba:
+    movement: ground
+    danger: 2
+    stompable: true
+
+  green_koopa:
+    movement: ground
+    danger: 3
+    stompable: true
+    shell_state: true
+
+  green_koopa_para:
+    movement: aerial
+    danger: 3
+
+  hammer_bro:
+    movement: ranged
+    danger: 5
+    projectile: hammer
+
+  lakitu:
+    movement: aerial
+    danger: 4
+    spawns: spiny
+
+  pirahna_plant:
+    movement: fixed
+    danger: 4
+    trigger: proximity
+
+  red_koopa:
+    movement: ground
+    danger: 3
+    stompable: true
+    shell_state: true
+
+  red_koopa_para:
+    movement: aerial
+    danger: 3
+
+  spiny:
+    movement: ground
+    danger: 4
+    unstompable: true
+
+  spiny_egg:
+    movement: projectile
+    danger: 3
+
+  squid:
+    movement: swimming
+    danger: 3
+
+
+
+objects:
+
+  buzzy_shell:
+    movement: sliding
+    danger: 3
+    state: shell
+    reflectable: true
+
+  green_shell:
+    movement: sliding
+    danger: 3
+    state: shell
+    reflectable: true
+
+  red_shell:
+    movement: sliding
+    danger: 3
+    state: shell
+    reflectable: true
