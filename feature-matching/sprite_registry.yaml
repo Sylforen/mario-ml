@@ -178,6 +178,8 @@ goals:
 hazard:
 
   lava:
+    sprites:
+      - assets/hazard/lava.png
     lethal: true
     persistent: true
 
@@ -187,10 +189,14 @@ hazard:
     dynamic: true
 
   fire_bar:
+    sprites:
+      - assets/hazard/fire_bar.png
     lethal: true
     periodic: true
 
   bullet_shooter:
+    sprites:
+      - assets/hazard/bullet_shooter.png
     spawns: bullet_bill
     periodic: true
 
@@ -199,76 +205,108 @@ hazard:
 enemies:
 
   bullet_bill:
+    sprites:
+      - assets/enemies/bullet_bill.png
     movement: projectile
     danger: 3
 
   buzzy_beetle:
+    sprites:
+      - assets/enemies/buzzy_beetle.png
     movement: ground
     danger: 2
     stompable: true
 
   evil_calcifer:
+    sprites:
+      - assets/enemies/evil_calcifer.png
     movement: unknown
     danger: 5
 
   fish_grey:
+    sprites:
+      - assets/enemies/fish_grey.png
     movement: swimming
     danger: 2
 
   fish_red:
+    sprites:
+      - assets/enemies/fish_red.png
     movement: swimming
     danger: 3
 
   goomba:
+    sprites:
+      - assets/enemies/goomba.png
     movement: ground
     danger: 2
     stompable: true
 
   green_koopa:
+    sprites:
+      - assets/enemies/green_koopa.png
     movement: ground
     danger: 3
     stompable: true
     shell_state: true
 
   green_koopa_para:
+    sprites:
+      - assets/enemies/green_koopa_para.png
     movement: aerial
     danger: 3
 
   hammer_bro:
+    sprites:
+      - assets/enemies/hammer_bro.png
     movement: ranged
     danger: 5
     projectile: hammer
 
   lakitu:
+    sprites:
+      - assets/enemies/lakitu.png
     movement: aerial
     danger: 4
     spawns: spiny
 
   pirahna_plant:
+    sprites:
+      - assets/enemies/pirahna_plant.png
     movement: fixed
     danger: 4
     trigger: proximity
 
   red_koopa:
+    sprites:
+      - assets/enemies/red_koopa.png
     movement: ground
     danger: 3
     stompable: true
     shell_state: true
 
   red_koopa_para:
+    sprites:
+      - assets/enemies/red_koopa_para.png
     movement: aerial
     danger: 3
 
   spiny:
+    sprites:
+      - assets/enemies/spiny.png
     movement: ground
     danger: 4
     unstompable: true
 
   spiny_egg:
+    sprites:
+      - assets/enemies/spiny_egg.png
     movement: projectile
     danger: 3
 
   squid:
+    sprites:
+      - assets/enemies/squid.png
     movement: swimming
     danger: 3
 
@@ -277,18 +315,24 @@ enemies:
 objects:
 
   buzzy_shell:
+    sprites:
+      - assets/objects/buzzy_shell.png
     movement: sliding
     danger: 3
     state: shell
     reflectable: true
 
   green_shell:
+    sprites:
+      - assets/objects/green_shell.png
     movement: sliding
     danger: 3
     state: shell
     reflectable: true
 
   red_shell:
+    sprites:
+      - assets/objects/red_shell.png
     movement: sliding
     danger: 3
     state: shell
