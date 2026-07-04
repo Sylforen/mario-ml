@@ -1,0 +1,13 @@
+pip install \
+    gymnasium \
+    gym-super-mario-bros \
+    nes-py \
+    opencv-python \
+    numpy \
+    scikit-learn \
+    tensorboard \
+    matplotlib \
+    tqdm \
+    pyyaml
+
+
