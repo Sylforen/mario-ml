@@ -211,13 +211,15 @@ enemies:
 
   bullet_bill:
     sprites:
-      - assets/enemies/bullet_bill.png
+      - assets/enemies/bullet_bill_left.png
+      - assets/enemies/bullet_bill_right.png
     movement: projectile
     danger: 3
 
   buzzy_beetle:
     sprites:
-      - assets/enemies/buzzy_beetle.png
+      - assets/enemies/buzzy_beetle_left.png
+      - assets/enemies/buzzy_beetle_right.png
     movement: ground
     danger: 2
     stompable: true
@@ -250,7 +252,10 @@ enemies:
 
   green_koopa:
     sprites:
-      - assets/enemies/green_koopa.png
+      - assets/enemies/green_koopa_left_1.png
+      - assets/enemies/green_koopa_left_2.png
+      - assets/enemies/green_koopa_right_1.png
+      - assets/enemies/green_koopa_right_2.png
     movement: ground
     danger: 3
     stompable: true
@@ -258,7 +263,8 @@ enemies:
 
   green_koopa_para:
     sprites:
-      - assets/enemies/green_koopa_para.png
+      - assets/enemies/green_koopa_para_left.png
+      - assets/enemies/green_koopa_para_right.png
     movement: aerial
     danger: 3
 
@@ -285,7 +291,8 @@ enemies:
 
   red_koopa:
     sprites:
-      - assets/enemies/red_koopa.png
+      - assets/enemies/red_koopa_left.png
+      - assets/enemies/red_koopa_right.png
     movement: ground
     danger: 3
     stompable: true
@@ -293,7 +300,8 @@ enemies:
 
   red_koopa_para:
     sprites:
-      - assets/enemies/red_koopa_para.png
+      - assets/enemies/red_koopa_para_left.png
+      - assets/enemies/red_koopa_para_right.png
     movement: aerial
     danger: 3
 
